@@ -1,0 +1,6 @@
+<div>
+  <% @coupons.each do |coupon| %>
+  <!-- *coupon here is an instanciated variable* -->
+    <div><%= link_to "Coupon Code: #{coupon.coupon_code} | Store: #{coupon.store}", coupon_path(coupon)  %></div>
+  <% end %>
+</div>
